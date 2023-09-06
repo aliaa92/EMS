@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+    <link rel="stylesheet" href="./BOOT STRAP/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .brandgrident {
+            background: #368DCF;
+            background: linear-gradient(to right, #368DCF 0%, #7ECF21 100%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+        <div class="container-fluid"><a class="navbar-brand brandgrident" href="dash.html">EMS2.0</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" aria-current="page" href="dash.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="employess.html">employess</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="jobs.html">jobs</a></li>
+                </ul>
+                <form class="d-flex gap-3" role="search">
+
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <button class="btn btn-success rounded-end-2" type="submit"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="vr text-white"></div>
+                    <button class="btn btn-warning" type="submit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-power" viewBox="0 0 16 16">
+                            <path d="M7.5 1v7h1V1h-1z" />
+                            <path
+                                d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z" />
+                        </svg>
+                    </button>  
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid mt-3">
+        <div class="row justify-content-center gap-3">
+            <div class="col-md-2 ">
+                <ul class="list-group shadow small mb-3">
+                    <li class="list-group-item active" aria-current="true">Jobs data</li>
+                    <a href="employess.html" data-bs-toggle="modal" data-bs-target="#modalJob" class="list-group-item list-group-item-action list-group-item-light"> Add
+                        job
+                    </a>
+                </ul>
+                <ul class="list-group shadow small mb-3">
+                    <li class="list-group-item active" aria-current="true">Realated links</li>
+                    <a href="jobs.html" class="list-group-item list-group-item-action list-group-item-light">Empolyees
+                        list</a>
+                </ul>
+
+            </div>
+            <div class="col-md-8 ">
+
+                <table class="table table-bordered caption-top table-sm">
+                    <caption class="text-bg-dark text-center rounded-top">Jobs list</caption>
+                    <thead class="table-secondary small">
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Details</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody class="align-middle">
+                        <tr>
+                            <td scope="row">1</td>
+                            <td>Graphic Designer</td>
+
+                            <td> <a href="#" class="btn btn-sm btn-primary d-block"data-bs-target="#modalJobdetails" data-bs-toggle="modal">Details</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-warning d-block" data-bs-toggle="modal"
+                                data-bs-target="#modalJobEdit">Edit</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-danger d-block" data-bs-toggle="modal"
+                                data-bs-target="#modaljobDelete" >Delete</a></td>
+
+                        </tr>
+                        <tr>
+                            <td scope="row">2</td>
+                            <td>Web Designer</td>
+
+                            <td> <a href="#" class="btn btn-sm btn-primary d-block"data-bs-target="#modalJobdetails" data-bs-toggle="modal">Details</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-warning d-block"  data-bs-toggle="modal"
+                                data-bs-target="#modalJobEdit">Edit</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-danger d-block"  data-bs-toggle="modal"
+                                data-bs-target="#modaljobDelete">Delete</a></td>
+
+                        </tr>
+                        <tr>
+                            <td scope="row">3</td>
+                            <td>Interior Designer</td>
+
+                            <td> <a href="#" class="btn btn-sm btn-primary d-block"data-bs-target="#modalJobdetails" data-bs-toggle="modal">Details</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-warning d-block"  data-bs-toggle="modal"
+                                data-bs-target="#modalJobEdit">Edit</a></td>
+                            <td> <a href="#" class="btn btn-sm btn-danger d-block"  data-bs-toggle="modal"
+                                data-bs-target="#modaljobDelete">Delete</a></td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal" id="modalJob" tabindex="-1" style="backdrop-filter: blur(5px);" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-bg-dark">
+                    <h6 class="modal-title">Add Job Details</h6>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-2" type="date">
+                        <input class="form-control mb-2" type="text" placeholder="Job Name">
+                        <div class="row mt-2 gx-2">
+                            <div class="col-md-10  d-flex "><button type="button"
+                                    class="btn btn-success  flex-fill small btn-sm ">Add Job</button>
+
+                            </div>
+                            <div class="col-md-2  d-flex"><button type="button" class="btn btn-warning flex-fill small btn-sm"
+                                    data-bs-dismiss="modal">Close</button></div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modalJobdetails" tabindex="-1" style="backdrop-filter: blur(5px);"
+    data-bs-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered ">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header text-bg-dark">
+                <h6 class="modal-title"> Job Details</h6>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body m-0 p-0">
+                <table class="table table-bordered mb-0">
+                    <tr>
+                        <th class="w-50">ID</th>
+                        <td >1</td>
+                    </tr>
+                    <tr>
+                        <th>Job Name</th>
+                        <td>Graphic Designer</td>
+                    </tr>
+                    
+                </table>
+                <div class="modal-footer mt-0">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#modalJobEdit" class="btn btn-warning btn-sm">Edit Details</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Close</button>
+                   
+                  </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+    <div class="modal" id="modalJobEdit" tabindex="-1" style="backdrop-filter: blur(5px);" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header text-bg-dark">
+                    <h6 class="modal-title">Add Job Details</h6>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="">
+                        <input class="form-control mb-2" type="date" value="2022-07-19">
+                        <input class="form-control mb-2" type="text" placeholder="Job Name" value="Graphic Designer">
+                        <div class="row mt-2 gx-2">
+                            <div class="col-md-10  d-flex "><button type="button"
+                                    class="btn btn-success  flex-fill small btn-sm ">Update Job</button>
+
+                            </div>
+                            <div class="col-md-2  d-flex"><button type="button" class="btn btn-warning flex-fill small btn-sm"
+                                    data-bs-dismiss="modal">Close</button></div>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modaljobDelete" tabindex="-1" style="backdrop-filter: blur(5px);" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <label class="modal-title fw-light fs-4" >Do you want to delete the Job<b>"Graphic Designer"</b>?</label>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-danger btn-sm">YES!</button>
+              <button type="button" class="btn btn-warning btn-sm" data-bs-dismiss="modal">Nope,Go back</button>
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    <script src="./BOOT STRAP/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
